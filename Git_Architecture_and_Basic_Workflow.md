@@ -116,4 +116,5 @@ What it does:
 --all: Shows commits across ALL branches, not just the active branch you are currently standing on.
 
 When to use: This is the ultimate industry-standard command. Senior DevOps engineers use this daily to view the complete history of every branch in the entire repository at a single glance.
+
 ## Additional Notes
