@@ -28,6 +28,16 @@ Use '#' followed by a space to create section headings. The number of '#' symbol
 
 ## 2. Text Formatting 
 ## Enhance readability using symbols for bold, italics, strikethrough and highlighting.
+Input (*This text will be italic*
+_This text will also be italic_
+
+**This text will be bold**
+__This text will also be bold__
+
+***This text will be bold and italic***
+
+~~This text will have a strikethrough~~)
+
 
 *This text will be italic*
 _This text will also be italic_
