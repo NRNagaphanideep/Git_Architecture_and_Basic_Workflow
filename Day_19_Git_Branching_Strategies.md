@@ -68,7 +68,7 @@ git branch -d feature/login
 
 # Force delete a local branch regardless of merge status
 git branch -D feature/experimental
-
+```
 
 ### Command Flags Breakdown (-b, -c, -d)
 
@@ -79,12 +79,15 @@ git branch -D feature/experimental
 -d (Delete Safe): Deletes a local branch only if its changes have already been safely merged into the target branch.
 
 
-Interview Questions & Answers
-Q1: What is the difference between git checkout -b and git switch -c?
-Answer: Both commands perform the exact same task: creating a new branch and immediately switching to it. However, git switch was introduced in Git 2.23 to separate branch management from file restoration (which git checkout previously handled both). git switch -c is the modern, recommended standard.
+### Interview Questions & Answers
+*Q1*: What is the difference between git checkout -b and git switch -c?
 
-Q2: Why should feature branches be short-lived in a CI/CD environment?
-Answer: Long-lived feature branches drift significantly from the primary codebase (main), leading to severe merge conflicts, difficult code reviews, and delayed integration. Keeping branches short-lived (Trunk-Based approach) promotes continuous integration and faster feedback loops.
+*Answer*: Both commands perform the exact same task: creating a new branch and immediately switching to it. However, git switch was introduced in Git 2.23 to separate branch management from file restoration (which git checkout previously handled both). git switch -c is the modern, recommended standard.
 
-Q3: What happens when you run git branch -d on an unmerged branch?
-Answer: Git blocks the deletion and throws an error warning that the branch contains unmerged changes. This safety mechanism prevents accidental data loss. To force deletion, you must explicitly use git branch -D.
+*Q2*: Why should feature branches be short-lived in a CI/CD environment?
+
+*Answer*: Long-lived feature branches drift significantly from the primary codebase (main), leading to severe merge conflicts, difficult code reviews, and delayed integration. Keeping branches short-lived (Trunk-Based approach) promotes continuous integration and faster feedback loops.
+
+*Q3*: What happens when you run git branch -d on an unmerged branch?
+
+*Answer*: Git blocks the deletion and throws an error warning that the branch contains unmerged changes. This safety mechanism prevents accidental data loss. To force deletion, you must explicitly use git branch -D.
