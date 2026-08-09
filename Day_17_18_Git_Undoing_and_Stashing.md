@@ -1,4 +1,3 @@
-cat << 'EOF' > Day_17_18_Git_Undoing_and_Stashing.md
 # Day 17 & 18: Undoing Changes and Stashing in Git
 
 ## Table of Contents
