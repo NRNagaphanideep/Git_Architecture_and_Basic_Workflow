@@ -90,6 +90,7 @@ The 4 Variations of git log Explained
 When you make commits in Git, it records a rich history. How you format that history depends on the flag you attach to git log.
 
 1. Standard git log (Detailed View)
+
 What it does: Shows every single detail about your commits (Full 40-character SHA hash, Author name, Author email, Date, Time, and the full Commit Message).
 
 When to use: When you need to know who made a change and exactly when it happened.
@@ -97,16 +98,19 @@ When to use: When you need to know who made a change and exactly when it happene
 Drawback: Takes up a massive amount of screen space. Viewing 10 commits requires heavy scrolling.
 
 2. git log --oneline (Condensed View)
+
 What it does: --oneline truncates the 40-character hash into a 7-character short hash, removes the author name and timestamp, and collapses each commit into one single line.
 
 When to use: When you want a quick, clean list of past commits without filling up your screen.
 
 3. git log --oneline --graph (Visual History View)
+
 What it does: Adds a text-based ASCII graph (*, |, /, \) on the left side of the single-line logs.
 
 When to use: When you start working with Branches (which we cover in Days 19–21). It visually shows where branches split off and where they merged back together.
 
 4. git log --oneline --graph --all (Complete Repository Map)
+
 What it does:
 
 --oneline: Keeps it compact.
@@ -117,4 +121,6 @@ What it does:
 
 When to use: This is the ultimate industry-standard command. Senior DevOps engineers use this daily to view the complete history of every branch in the entire repository at a single glance.
 
-## Additional Notes
+
+
+
