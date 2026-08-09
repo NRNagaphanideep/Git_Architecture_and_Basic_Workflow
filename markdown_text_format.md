@@ -62,6 +62,7 @@ Use numbers followed by a period.
 1. Install Git
 2. Configure username and email
 3. Clone remote repository.
+---------
 
 #### 4. Code Blocks & Inline Code
 
@@ -73,7 +74,7 @@ Use single backticks for commands within regular sentences:
 
 Run `git status` to check the current state of your repository.
 
-__Multiline Code Blocks
+__Multiline Code Blocks__
 
 Use tripe backticks (```) and specify the language name for color syntax highlighting.
 
@@ -92,7 +93,7 @@ def calculate_uptime(days):
     return f"Total Uptime: {hours} hours"
 print(calculate_uptime(30))
 ```
-
+------------
 
 ##### 5. Links & Images
 
@@ -104,6 +105,8 @@ Visit my GitHub Profile: [NRNagaphanideep](https://github.com/NRNagaphanideep)
 <!-- Images: ![Alt Text](Image_URL) -->
 ![Git logo](https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png)
 
+----------
+
 ###### 6 Blockquotes & Callouts
 
 Use > to create blockquotes for tips,notes or warnings.
@@ -111,6 +114,8 @@ Use > to create blockquotes for tips,notes or warnings.
 > **Note:** Always inspect `git status` before executing a reset or commit command.
 
 > **Warning:** `git reset --hard` completely wipes uncommitted working directory changes!>
+
+-------------
 
 ###### 7 Tables
 
@@ -123,6 +128,8 @@ Organize structured data using pipe | symbols and hyphen- dividers.
 | `git reset --hard` | Local Commits | No (Completely Discarded) |
 | `git revert` | Remote/Public Commits | Yes (Creates Inverse Commit) |
 
+--------
+
 ###### 8. Task Lists
 
 Create interactive checkboxes in GitHub issue descriptions or markdown files.
@@ -132,12 +139,16 @@ Create interactive checkboxes in GitHub issue descriptions or markdown files.
 - [ ] Learn Branching Strategies (Day 19)
 - [ ] Hands-on Merge Conflict Resolution (Day 21)
 
+-------
+
 ##### 9. Escaping Special Characters
 
 If you want to display Markdown symbols (like #,*or`) as literal text without triggering formatting, use a backslash \.
 
 \# This is literal text, not a Heading.
 \*This is literal text, not italicized.\*
+
+----------
 
 ###### 10. Horizontal Rules
 
