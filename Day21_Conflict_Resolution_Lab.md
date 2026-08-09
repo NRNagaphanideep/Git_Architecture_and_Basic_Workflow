@@ -1,4 +1,4 @@
-y 21: Conflict Resolution Lab – Complete Study Guide
+Day 21: Conflict Resolution Lab
 
 ## 1. Overview & Core Concepts
 In software engineering and DevOps workflows, Git conflicts are a natural and frequent occurrence. A **Merge Conflict** happens when Git cannot automatically reconcile differences between two commits across different branches. This typically occurs when the exact same line(s) of code in a file are modified differently in both branches being merged or rebased.
