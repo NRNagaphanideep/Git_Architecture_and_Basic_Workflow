@@ -107,10 +107,13 @@ git log --oneline --graph
 # Interview Questions & Answers
 ---
 __Q1__: What is the main disadvantage of using git rebase over git merge?
+
 __Answer__: git rebase rewrites history by generating new commit hashes for moved commits. If done on shared or public branches, it disrupts the commit history for other developers on the team, causing merge conflicts and commit duplication.
 
 __Q2__: How does a Fast-Forward merge differ from a 3-Way merge?
+
 __Answer__: A Fast-Forward merge occurs when the base branch has no new commits since the feature branch diverged, allowing Git to simply advance the branch pointer without creating a merge commit. A 3-Way merge occurs when both branches have diverged with new commits, requiring Git to create a new merge commit.
 
 __Q3__: When should a DevOps engineer choose git rebase in their workflow?
+
 __Answer__: A developer should use git rebase main on their local, private feature branch to incorporate the latest updates from main before submitting a Pull Request (PR). This ensures a clean, linear, and easily reviewable history.
