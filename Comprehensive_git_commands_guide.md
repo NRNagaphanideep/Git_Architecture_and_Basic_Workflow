@@ -1,4 +1,4 @@
-omprehensive Git Commands Guide
+Comprehensive Git Commands Guide
 
 ## 1. Local Workspace Commands
 These commands operate exclusively on your local machine. They do not interact with GitHub or any remote server.
