@@ -89,3 +89,8 @@ These commands help clean up workspace state, remove tracking, or resolve confli
   During a merge conflict, keeps the incoming remote version of the specified file and discards local changes.
 * **`git merge origin/main --allow-unrelated-histories`**  
   Forces Git to merge two branches that do not share a common commit history (useful when syncing independently initialized repositories).
+
+### Advanced Remote Synchronization
+* **`git pull --rebase origin main`**  
+  Downloads updates from GitHub and places your local un-pushed commits on top of the remote changes without creating unnecessary merge conflict commits. Use this when `git push` is rejected due to remote-side updates.
+
