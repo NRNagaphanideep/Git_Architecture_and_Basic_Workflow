@@ -63,21 +63,26 @@ Using standardized prefixes in commit messages keeps the repository history clea
 * **Sub-folder Tracking:** If a directory is initialized with `git init`, all nested sub-directories created inside it are automatically tracked by Git without re-initializing.
 * **New Projects:** Moving outside the initialized Git repository requires running `git init` in the new folder to start tracking.
 * **Selective Staging:** Staging specific files (`git add file1.py`) allows committing completed work while leaving incomplete files safely in the Working Directory.
-1. Standard git log (Detailed View)
+
+# 1. Standard git log (Detailed View)
+
 What it does: Shows every single detail about your commits (Full 40-character SHA hash, Author name, Author email, Date, Time, and the full Commit Message).
 
 When to use: When you need to know who made a change and exactly when it happened.
 
 Drawback: Takes up a massive amount of screen space. Viewing 10 commits requires heavy scrolling.
-2. git log --oneline (Condensed View)
-What it does: --oneline truncates the 40-character hash into a 7-character short hash, removes the author name and timestamp, and collapses each commit into one single line.
 
+# 2. git log --oneline (Condensed View)
+What it does: --oneline truncates the 40-character hash into a 7-character short hash, removes the author name and timestamp, and collapses each commit into one single line.
 When to use: When you want a quick, clean list of past commits without filling up your screen.
-3. git log --oneline --graph (Visual History View)
+
+# 3. git log --oneline --graph (Visual History View)
 What it does: Adds a text-based ASCII graph (*, |, /, \) on the left side of the single-line logs.
 
 When to use: When you start working with Branches (which we cover in Days 19–21). It visually shows where branches split off and where they merged back together.
-4. git log --oneline --graph --all (Complete Repository Map)
+
+# 4. git log --oneline --graph --all (Complete Repository Map)
+
 What it does:
 
 --oneline: Keeps it compact.
@@ -87,9 +92,10 @@ What it does:
 --all: Shows commits across ALL branches, not just the active branch you are currently standing on.
 
 The 4 Variations of git log Explained
+
 When you make commits in Git, it records a rich history. How you format that history depends on the flag you attach to git log.
 
-1. Standard git log (Detailed View)
+# 1. Standard git log (Detailed View)
 
 What it does: Shows every single detail about your commits (Full 40-character SHA hash, Author name, Author email, Date, Time, and the full Commit Message).
 
@@ -97,19 +103,19 @@ When to use: When you need to know who made a change and exactly when it happene
 
 Drawback: Takes up a massive amount of screen space. Viewing 10 commits requires heavy scrolling.
 
-2. git log --oneline (Condensed View)
+# 2. git log --oneline (Condensed View)
 
 What it does: --oneline truncates the 40-character hash into a 7-character short hash, removes the author name and timestamp, and collapses each commit into one single line.
 
 When to use: When you want a quick, clean list of past commits without filling up your screen.
 
-3. git log --oneline --graph (Visual History View)
+# 3. git log --oneline --graph (Visual History View)
 
 What it does: Adds a text-based ASCII graph (*, |, /, \) on the left side of the single-line logs.
 
 When to use: When you start working with Branches (which we cover in Days 19–21). It visually shows where branches split off and where they merged back together.
 
-4. git log --oneline --graph --all (Complete Repository Map)
+# 4. git log --oneline --graph --all (Complete Repository Map)
 
 What it does:
 
