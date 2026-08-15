@@ -44,6 +44,7 @@ Remote main branch line update
 git add <resolved-file>
 git commit -m "fix: resolve merge conflict between main and feature-branch"
 git push origin feature-branch
+
 ```
 
 ## DevOps Interview Questions & Answers
