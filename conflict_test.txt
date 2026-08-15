@@ -1,1 +1,1 @@
-Original Line: We are learning Git workflow
+Dev-B Line: We are learning Git conflicts with English explanation
