@@ -1,1 +1,1 @@
-Dev-B Line: We are learning Git conflicts with English explanation
+Dev-A & Dev-B Lines: We are learning Git conflicts with Telugu and English explanation
