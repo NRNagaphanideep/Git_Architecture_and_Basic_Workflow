@@ -1,4 +1,4 @@
-y 23: GitHub Collaboration – Pull Requests, Code Reviews & Merge Conflicts
+Day 23: GitHub Collaboration – Pull Requests, Code Reviews & Merge Conflicts
 
 ## 1. Overview
 In a real-world DevOps environment, multiple engineers work on the same codebase simultaneously. Day 23 covers essential GitHub collaboration strategies: creating Pull Requests (PRs), conducting effective Code Reviews, and resolving Merge Conflicts confidently.
@@ -30,21 +30,21 @@ A Merge Conflict occurs when Git cannot automatically reconcile differences betw
    ```bash
    git checkout feature-branch
    git pull origin main
-2. **Locate Markers:** Git injects conflict markers into affected files:
+2. Locate Markers: Git injects conflict markers into affected files:
 
-<<<<<<< HEAD (Current Branch Changes)
+`<<<<<<< HEAD (Current Branch Changes)
 Your local line update
 =======
 Remote main branch line update
->>>>>>> origin/main
+>>>>>>> origin/main`
 
-3. **Resolve:** Manually edit the file, choose the correct lines, and delete all Git conflict markers (<<<<<<<, =======, >>>>>>>).
+3. Resolve: Manually edit the file, choose the correct lines, and delete all Git conflict markers (<<<<<<<, =======, >>>>>>>).
 
-4.** Finalize:**
+4.Finalize:
 git add <resolved-file>
 git commit -m "fix: resolve merge conflict between main and feature-branch"
 git push origin feature-branch
-
+    
 ```
 
 ## DevOps Interview Questions & Answers
