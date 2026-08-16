@@ -5,6 +5,7 @@ on:
     branches:
       - main
   workflow_dispatch:
+
 jobs:
   lint-job:
     runs-on: ubuntu-latest
