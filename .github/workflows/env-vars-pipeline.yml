@@ -1,0 +1,28 @@
+name: Environment Variables Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+env:
+  APPLICATION_NAME: "DevOps-Pro-App"
+  ENVIRONMENT: "Production"
+
+jobs:
+  print-info-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Custom Environment Variables
+        run: |
+          echo "Application Name: ${{ env.APPLICATION_NAME }}"
+          echo "Target Environment: ${{ env.ENVIRONMENT }}"
+      - name: Print GitHub Context Information
+        run: |
+          echo "Triggered by User: ${{ github.actor }}"
+          echo "Git Branch Reference: ${{ github.ref }}"
+          echo "Commit SHA Hash: ${{ github.sha }}"
+
+
