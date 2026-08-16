@@ -16,20 +16,20 @@ jobs:
 
 #Job 2: Building (after completion of test-job, it willl started)
 
-build-job:
-  needs: test-job
-  runs-on: ubuntu-latest
-  steps:
-    - name: Build Application Package
-      run: echo "Building Docker Image / App Package..."
+ build-job:
+   needs: test-job
+   runs-on: ubuntu-latest
+   steps:
+     - name: Build Application Package
+       run: echo "Building Docker Image / App Package..."
 
 # Job 3: Deploying(After completion of build-job, it iwll starts)
 
-deploy-job:
-  needs: build-job
-  runs-on: Ubuntu-latest
-  steps:
-    - name: Deploy to Server
-      run: echo "Deploying code to AWS Production Server!"
+ deploy-job:
+   needs: build-job
+   runs-on: ubuntu-latest
+   steps:
+     - name: Deploy to Server
+       run: echo "Deploying code to AWS Production Server!"
 
 
