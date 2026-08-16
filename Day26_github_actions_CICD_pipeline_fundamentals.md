@@ -1,4 +1,4 @@
-y 26: GitHub Actions CI/CD Pipeline Fundamentals
+Day 26: GitHub Actions CI/CD Pipeline Fundamentals
 
 ## 1. Overview of GitHub Actions & Architecture
 GitHub Actions is a built-in Continuous Integration and Continuous Deployment (CI/CD) platform that allows you to automate your build, test, and deployment pipelines directly within your GitHub repository.
