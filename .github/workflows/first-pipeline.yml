@@ -1,0 +1,16 @@
+name: My First Devops Pipeline
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  say-hello-job:
+    runs-on:  ubuntu-latest
+
+    steps:
+      - name:  Print Welcome Message
+        run:  echo "Hello Phanideep! Welcome to Day 26 Github Actions."
+      - name:  Show Current Date and Time
+        run:  date
+
