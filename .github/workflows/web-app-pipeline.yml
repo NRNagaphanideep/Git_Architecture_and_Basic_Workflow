@@ -23,11 +23,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Build tests
-        run: echo "Building Production Docker Image..."
-   deploy-job:
-     needs: build-job
-     runs-on: ubuntu-latest
-     steps:
-       - name: Run deploy tests
-         run: echo "Deploying to production Cloud..."
+        run: echo "Building production Docker Image..."
+  deploy-job:
+    needs: build-job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run deploy tests
+        run: echo "Deploying to production Cloud..."
 
