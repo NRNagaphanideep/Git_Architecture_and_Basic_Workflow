@@ -1,0 +1,32 @@
+name: Web App Release Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  lint-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Lint test
+        run: echo "Checking code formatting and syntax Errors..."
+  test-job:
+    needs: lint-job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run unit tests
+        run: echo "Running Automated Tests...."
+  build-job:
+    needs: test-job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Build tests
+        run: echo "Building Production Docker Image..."
+   deploy-job:
+     needs: build-job
+     runs-on: ubuntu-latest
+     steps:
+       - name: Run deploy tests
+         run: echo "Deploying to production Cloud..."
+
