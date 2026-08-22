@@ -13,6 +13,6 @@ jobs:
       - name: Display Target Environment
         run: |
           echo "Executing Central Deployment Logic..."
-        echo "Deploying Application to: ${{ inputs.target-environment }}"
+          echo "Deploying Application to: ${{ inputs.target-environment }}"
 
 
