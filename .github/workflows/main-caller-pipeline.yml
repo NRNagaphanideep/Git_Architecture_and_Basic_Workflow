@@ -1,0 +1,21 @@
+name: Main Pipeline Calling Reusable Workflow
+
+on:
+  push:
+    branches:
+      - main:
+  workflow_dispatch:
+
+jobs:
+  call-dev-deploy:
+    uses: ./.github/workflows/called-workflow.yml
+    with:
+      target-environment: "Development Environment"
+
+  call-prod-deploy:
+    needs: call-dev-deploy
+    uses: ./.github/workflows/called-worflow.yml
+    with:
+      target-environment: "Production Environment"
+
+

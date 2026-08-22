@@ -7,14 +7,13 @@ on:
   workflow_dispatch:
 
 jobs:
-  multi-env-test:
+  multi-env-latest:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
         node-version: [18, 20]
-    
     runs-on: ${{ matrix.os }}
-    
+
     steps:
        - name: Checkout Code
          uses: actions/checkout@v4
@@ -22,8 +21,9 @@ jobs:
          uses: actions/setup-node@v4
          with:
            node-version: ${{ matrix.node-version }}
-       - name: verify OS and Node Version
-         run: |
-           echo "Running on OS: ${{ matrix.os }}"
-           echo "Node Version inside container:"
-           node -v
+        - name: Verify OS and Node Version
+          run: |
+            echo "Running on OS: ${{ matrix.os }}"
+            echo "Node version inside container:"
+            node -v
+
