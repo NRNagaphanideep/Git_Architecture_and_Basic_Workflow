@@ -1,4 +1,4 @@
-y 27 (Part 1): GitHub Actions Advanced Concepts
+Day 27 (Part 1): GitHub Actions Advanced Concepts
 
 ## 1. Marketplace Actions (`uses: actions/checkout@v4`)
 * **What:** Using pre-built action blocks created by GitHub or the community instead of writing custom shell scripts.
