@@ -1,4 +1,4 @@
-y 28: GitHub Actions - Reusable Workflows & Custom Composite Actions
+Day 28: GitHub Actions - Reusable Workflows & Custom Composite Actions
 
 ## 1. Concept Overview & Comparison
 
@@ -45,7 +45,7 @@ jobs:
 ```
 ### Workflow 2: Main Caller Workflow (.github/workflows/main-caller-pipeline.yml)
 
-```
+```yaml
 name: Main Pipeline Calling Reusable Workflow
 
 on:
@@ -69,8 +69,7 @@ jobs:
 
 ### Custom Action Definition (.github/actions/custom-setup/action.yml)
 
-```
-
+```yaml
 name: "Custom System Setup Action"
 description: "Prints system information and sets up custom environment"
 
@@ -91,7 +90,7 @@ runs:
 
 ### Workflow 3: Pipeline Using Composite Action (.github/workflows/composite-pipeline.yml)
 
-```
+```yaml
 name: Composite Action Pipeline
 
 on:
