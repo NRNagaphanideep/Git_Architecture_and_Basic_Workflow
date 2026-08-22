@@ -60,9 +60,11 @@ jobs:
 #### Interview Questions & Answers
 
 ***Q1:*** Why do we need actions/checkout@v4 in almost every workflow?
+
 ***Answer:*** GitHub Actions runners are clean, isolated virtual environments with no access to repository source code by default. actions/checkout@v4 clones the repositor code into the runner workspace so subsequent steps can process it.
 
 ***Q2:*** How does strategy.matrix save time in CI/CD pipelines?
+
 ***Answer:*** It automates multi-environment testing by spinning up parallel runners for all specified parameter combinations (e.g., OS types, runtime versions) from a single YAML configuration block.
 
 ***Q3:*** Why can't deploy-job directly access files created in build-job without Artifacts?
