@@ -1,0 +1,17 @@
+name: "Custom System Setup Action"
+description: "Prints system information and sets up custom environment"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Print System Info
+      shell: bash
+      run: |
+        echo "=== Running Composite Action ==="
+        echo "Operating System:"
+        uname -a
+
+    - name: Show Current Date
+      shell: bash
+      run: date
+

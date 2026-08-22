@@ -1,0 +1,19 @@
+name: Composite Action Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test-composite-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: Run Our Custom Composite Action
+        uses: ./.github/actions/custom-setup
+      - name: Final Step
+        run: echo "Composite Action executed successfully"
+
