@@ -26,6 +26,6 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secretes.DOCKER_USERNAME }}/devops-app:latest
+            ${{ secrets.DOCKER_USERNAME }}/devops-app:latest
             ${{ secrets.DOCKER_USERNAME }}/devops-app:${{ github.sha }}
 
