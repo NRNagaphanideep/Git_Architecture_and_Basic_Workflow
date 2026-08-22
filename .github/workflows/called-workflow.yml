@@ -1,5 +1,4 @@
-name: Reusable Deployment Workflow
-
+name: Resuable Deployment Workflow
 on:
   workflow_call:
     inputs:
@@ -14,5 +13,6 @@ jobs:
       - name: Display Target Environment
         run: |
           echo "Executing Central Deployment Logic..."
-        echo "Deploying Application to: ${{ inputs.rarget-environment }}"
-          1
+        echo "Deploying Application to: ${{ inputs.target-environment }}"
+
+
